@@ -1,7 +1,8 @@
 rm(list = ls())
-source('./rbf_Lorenco.R')
+source('./rbfBagging.R')
 require('mlbench')
 require('caret')
+require('e1071')
 
 Data <- mlbench::mlbench.2dnormals(n = 1000)
 train_perc <- 0.5
